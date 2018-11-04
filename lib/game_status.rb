@@ -27,7 +27,7 @@ WIN_COMBINATIONS = [
 end
 
 def full?(board)
-  board.all? {|token| token == "X" || token == "O"}
+  board.all? {|character| character == "X" || character == "O"}
 end
  def draw?(board)
   full?(board) && !won?(board)
