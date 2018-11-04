@@ -21,11 +21,11 @@ WIN_COMBINATIONS = [
     position_1 = board[win_combination[0]]
     position_2 = board[win_combination[1]]
     position_3 = board[win_combination[2]]
-    (position_1 == "X" && position_2 == "X" && position_3 == "X") || 
+    (position_1 == "X" && position_2 == "X" && position_3 == "X") ||
       (position_1 == "O" && position_2 == "O" && position_3 == "O")
   end
 end
-  
+
 def full?(board)
   board.all? {|token| token == "X" || token == "O"}
 end
@@ -40,4 +40,4 @@ end
   if combo
     board[combo[0]]
   end
-end 
+end
