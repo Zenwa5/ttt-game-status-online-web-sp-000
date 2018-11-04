@@ -21,5 +21,6 @@ def won?(board)
     index.each do |index|
     if position_taken?(board, index)
     end
+    end
   end
 end
