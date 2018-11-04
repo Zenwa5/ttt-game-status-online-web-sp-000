@@ -20,6 +20,7 @@ def won?(board)
   WIN_COMBINATIONS.each do |index|
     if index[0] == "X" || if index[1] == "X" || if index[2] == "X"
       return index
+    end
     else return false
     end
   end
