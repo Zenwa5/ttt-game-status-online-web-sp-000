@@ -20,7 +20,6 @@ def won?(board)
   WIN_COMBINATIONS.each do |combo|
     combo.each do |index|
       if position_taken?(board, index) == WIN_COMBINATIONS.any?
-      else return false
       end
     end
   end
